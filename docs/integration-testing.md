@@ -14,7 +14,7 @@ This document provides comprehensive testing procedures for the Coalition Deskto
 5. **Package Dependencies**: Ensure UI Toolkit package is installed and updated
 
 ### System Requirements
-- **Unity 6.0.0f1** or later
+- **Unity 6000.2.5f1** or later (tested with 6000.2.5f1)
 - **macOS 12.0+** (Apple Silicon recommended for optimal performance)
 - **Metal graphics API** support
 - **8GB RAM minimum** (16GB recommended)
@@ -244,5 +244,5 @@ The Coalition Desktop Shell is ready for delivery when:
 **Testing completed by**: Development Team
 **Testing date**: [To be filled during actual testing]
 **Build version**: 1.0.0
-**Unity version**: 6.0.0f1
+**Unity version**: 6000.2.5f1
 **Target platform**: macOS Apple Silicon

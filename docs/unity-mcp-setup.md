@@ -4,7 +4,7 @@
 This guide provides step-by-step instructions for setting up the Coalition Desktop Shell using Unity MCP tools once Unity Editor is running.
 
 ## Prerequisites
-1. Unity 6.0.0f1 or later installed
+1. Unity 6000.2.5f1 or later installed (tested with 6000.2.5f1)
 2. Unity MCP Bridge running
 3. Project opened in Unity Editor
 4. GitHub repository cloned to local machine
