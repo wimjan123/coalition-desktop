@@ -1,0 +1,20 @@
+{
+  "difficulty": "normal",
+  "showNotifications": true,
+  "failureMeter": 0.0,
+  "autoSave": true,
+  "soundEnabled": true,
+  "debugMode": false,
+  "performanceMode": "balanced",
+  "uiScale": 1.0,
+  "notifications": {
+    "showWelcome": true,
+    "showPerformanceWarnings": true,
+    "autoHideTime": 5.0
+  },
+  "accessibility": {
+    "highContrast": false,
+    "reducedMotion": false,
+    "screenReader": false
+  }
+}

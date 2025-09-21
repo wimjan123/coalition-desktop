@@ -1,0 +1,52 @@
+{
+  "headlines": [
+    {
+      "outlet": "National Tribune",
+      "headline": "PM's Infrastructure Plan Gains Momentum in Regional Australia",
+      "sentiment": "positive",
+      "timestamp": "2 hours ago",
+      "category": "politics",
+      "reach": "national"
+    },
+    {
+      "outlet": "Business Daily",
+      "headline": "Coalition Government Delivers Surplus Ahead of Forecasts",
+      "sentiment": "positive",
+      "timestamp": "4 hours ago",
+      "category": "economics",
+      "reach": "national"
+    },
+    {
+      "outlet": "Opposition Voice",
+      "headline": "Healthcare Reform: Too Little, Too Late Says Shadow Minister",
+      "sentiment": "negative",
+      "timestamp": "6 hours ago",
+      "category": "politics",
+      "reach": "national"
+    },
+    {
+      "outlet": "Regional Report",
+      "headline": "Local Communities Welcome New Road Funding Announcement",
+      "sentiment": "positive",
+      "timestamp": "8 hours ago",
+      "category": "regional",
+      "reach": "regional"
+    },
+    {
+      "outlet": "Economic Observer",
+      "headline": "Mining Royalties Boost Government Revenue Beyond Expectations",
+      "sentiment": "neutral",
+      "timestamp": "12 hours ago",
+      "category": "economics",
+      "reach": "specialist"
+    },
+    {
+      "outlet": "Social Media Pulse",
+      "headline": "#InfrastructurePlan Trending Positive Across All Demographics",
+      "sentiment": "positive",
+      "timestamp": "1 day ago",
+      "category": "social",
+      "reach": "digital"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "messages": [
+    {
+      "from": "Chief of Staff",
+      "subject": "Daily Briefing - Coalition Stability",
+      "preview": "Latest polling shows 3% uptick in approval ratings following yesterday's infrastructure announcement. Opposition parties remain divided on healthcare response.",
+      "timestamp": "2 hours ago",
+      "priority": "high",
+      "body": "Prime Minister,\n\nKey developments from the past 24 hours:\n\n• Infrastructure Package: Public reception positive, 67% approval in preliminary polling\n• Opposition Response: Shadow Treasurer called for fiscal responsibility review\n• Media Coverage: Generally favorable across major outlets\n• Coalition Unity: All ministers aligned on messaging\n\nRecommended Actions:\n1. Maintain current messaging strategy\n2. Prepare for Question Time challenges on budget implications\n3. Consider regional tour to highlight infrastructure benefits\n\nNext briefing: 0800 tomorrow\n\n- Margaret Wilson, Chief of Staff"
+    },
+    {
+      "from": "Press Secretary",
+      "subject": "Media Strategy - Healthcare Reform",
+      "preview": "Coordinated media blitz planned for Thursday. Key talking points attached. Three major interviews confirmed including 7:30 Report.",
+      "timestamp": "4 hours ago",
+      "priority": "normal",
+      "body": "PM,\n\nMedia schedule update for healthcare reform announcement:\n\nThursday Schedule:\n• 0630: Radio National Breakfast\n• 0800: Press conference (Parliament House)\n• 1200: Lunch interview with Financial Review\n• 1900: 7:30 Report (live)\n\nKey Messages:\n1. Evidence-based policy making\n2. Bipartisan consultation completed\n3. Staged implementation minimizes disruption\n4. Focus on rural and regional access\n\nAnticipated Questions:\n- Funding mechanism details\n- Timeline for implementation\n- Opposition party positioning\n\nBriefing pack attached.\n\n- James Patterson, Press Secretary"
+    },
+    {
+      "from": "Treasurer",
+      "subject": "Budget Update - Q3 Figures",
+      "preview": "Revenue tracking 2% above projections. Expenditure aligned with forecasts. Full quarterly report attached for cabinet consideration.",
+      "timestamp": "1 day ago",
+      "priority": "normal",
+      "body": "Prime Minister,\n\nQ3 Budget Performance Summary:\n\nRevenue:\n• Income tax: $89.2B (+3.1% vs forecast)\n• GST: $67.8B (+1.2% vs forecast)\n• Corporate tax: $45.6B (+2.8% vs forecast)\n• Total: $202.6B (+2.1% vs forecast)\n\nExpenditure:\n• Health: $78.4B (within budget)\n• Education: $34.2B (within budget)\n• Defense: $28.7B (within budget)\n• Infrastructure: $45.1B (+1.2% due to accelerated projects)\n• Total: $186.4B (+0.8% vs budget)\n\nNet Position: $16.2B surplus (vs $12.1B forecast)\n\nRecommendations:\n1. Maintain current fiscal settings\n2. Consider infrastructure acceleration funding\n3. Prepare for mid-year budget update\n\nFull report for Cabinet review attached.\n\n- David Chen, Treasurer"
+    }
+  ]
+}

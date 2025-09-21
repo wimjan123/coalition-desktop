@@ -1,0 +1,28 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="window-root" class="window">
+        <ui:VisualElement name="window-chrome" class="window-chrome">
+            <ui:VisualElement name="title-bar" class="title-bar">
+                <ui:VisualElement name="window-controls" class="window-controls">
+                    <ui:Button name="close-btn" class="window-button close-button" text="×" />
+                    <ui:Button name="minimize-btn" class="window-button minimize-button" text="−" />
+                    <ui:Button name="maximize-btn" class="window-button maximize-button" text="□" />
+                </ui:VisualElement>
+                <ui:Label name="window-title" class="window-title" text="Application Window" />
+                <ui:VisualElement name="title-spacer" class="title-spacer" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="window-content" class="window-content">
+            <!-- Application content goes here -->
+        </ui:VisualElement>
+        <ui:VisualElement name="resize-handles" class="resize-handles">
+            <ui:VisualElement name="resize-top" class="resize-handle resize-top" />
+            <ui:VisualElement name="resize-bottom" class="resize-handle resize-bottom" />
+            <ui:VisualElement name="resize-left" class="resize-handle resize-left" />
+            <ui:VisualElement name="resize-right" class="resize-handle resize-right" />
+            <ui:VisualElement name="resize-top-left" class="resize-handle resize-corner resize-top-left" />
+            <ui:VisualElement name="resize-top-right" class="resize-handle resize-corner resize-top-right" />
+            <ui:VisualElement name="resize-bottom-left" class="resize-handle resize-corner resize-bottom-left" />
+            <ui:VisualElement name="resize-bottom-right" class="resize-handle resize-corner resize-bottom-right" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

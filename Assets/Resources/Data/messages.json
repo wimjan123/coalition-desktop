@@ -1,0 +1,46 @@
+{
+  "conversations": [
+    {
+      "contact": "Deputy PM Sarah Mitchell",
+      "lastMessage": "Cabinet meeting moved to 2pm. Need your input on regional development funding proposal.",
+      "timestamp": "15 min ago",
+      "unread": 2,
+      "status": "online"
+    },
+    {
+      "contact": "Minister of Health",
+      "lastMessage": "Hospital capacity report ready for review. Some concerning trends in regional areas.",
+      "timestamp": "32 min ago",
+      "unread": 1,
+      "status": "online"
+    },
+    {
+      "contact": "Chief Advisor - Policy",
+      "lastMessage": "Opposition amendment could derail education bill. Strategy meeting needed ASAP.",
+      "timestamp": "1 hour ago",
+      "unread": 3,
+      "status": "busy"
+    },
+    {
+      "contact": "Media Director",
+      "lastMessage": "Social media analytics show positive sentiment on infrastructure announcement. Full report attached.",
+      "timestamp": "2 hours ago",
+      "unread": 0,
+      "status": "online"
+    },
+    {
+      "contact": "Campaign Manager",
+      "lastMessage": "Polling data from swing seats looking strong. Recommend additional resources for Tasmania.",
+      "timestamp": "4 hours ago",
+      "unread": 1,
+      "status": "offline"
+    },
+    {
+      "contact": "Minister of Finance",
+      "lastMessage": "Budget projections updated. Surplus tracking better than expected due to mining royalties.",
+      "timestamp": "Yesterday",
+      "unread": 0,
+      "status": "offline"
+    }
+  ]
+}

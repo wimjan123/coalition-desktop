@@ -1,0 +1,49 @@
+{
+  "proposals": [
+    {
+      "title": "National Infrastructure Modernization Act",
+      "status": "in_committee",
+      "support": 67,
+      "stage": "committee_review",
+      "priority": "high",
+      "sponsor": "Deputy PM Mitchell",
+      "timeline": "6 months"
+    },
+    {
+      "title": "Healthcare Access Enhancement Bill",
+      "status": "drafted",
+      "support": 72,
+      "stage": "stakeholder_consultation",
+      "priority": "very_high",
+      "sponsor": "Minister Thompson",
+      "timeline": "4 months"
+    },
+    {
+      "title": "Regional Development Investment Framework",
+      "status": "consultation",
+      "support": 58,
+      "stage": "public_consultation",
+      "priority": "medium",
+      "sponsor": "Deputy PM Mitchell",
+      "timeline": "8 months"
+    },
+    {
+      "title": "Climate Adaptation Strategy 2030",
+      "status": "development",
+      "support": 61,
+      "stage": "policy_development",
+      "priority": "high",
+      "sponsor": "Minister Wang",
+      "timeline": "12 months"
+    },
+    {
+      "title": "Education Technology Integration Plan",
+      "status": "review",
+      "support": 54,
+      "stage": "departmental_review",
+      "priority": "medium",
+      "sponsor": "Minister Santos",
+      "timeline": "10 months"
+    }
+  ]
+}

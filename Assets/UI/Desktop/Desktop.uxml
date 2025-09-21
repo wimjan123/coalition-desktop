@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="desktop-root" class="desktop">
+        <ui:VisualElement name="desktop-background" class="background" />
+        <ui:VisualElement name="desktop-icons" class="desktop-icons" />
+        <ui:VisualElement name="window-container" class="window-layer" />
+        <ui:VisualElement name="notification-overlay" class="notification-layer" />
+        <ui:VisualElement name="dock-container" class="dock">
+            <ui:VisualElement name="dock-panel" class="dock-panel">
+                <ui:VisualElement name="app-icons" class="app-container">
+                    <ui:Button name="mail-btn" class="app-icon" text="📧" />
+                    <ui:Button name="chat-btn" class="app-icon" text="💬" />
+                    <ui:Button name="poll-btn" class="app-icon" text="📊" />
+                    <ui:Button name="calendar-btn" class="app-icon" text="📅" />
+                    <ui:Button name="cabinet-btn" class="app-icon" text="🏛️" />
+                    <ui:Button name="policy-btn" class="app-icon" text="📋" />
+                    <ui:Button name="media-btn" class="app-icon" text="📺" />
+                </ui:VisualElement>
+                <ui:VisualElement name="dock-separator" class="dock-separator" />
+                <ui:VisualElement name="system-icons" class="system-container">
+                    <ui:Button name="settings-btn" class="system-icon" text="⚙️" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,52 @@
+{
+  "ministers": [
+    {
+      "name": "Sarah Mitchell",
+      "portfolio": "Deputy Prime Minister & Regional Development",
+      "approval": 68,
+      "status": "strong",
+      "tenure": "2.5 years",
+      "background": "Former mayor, agricultural economics degree"
+    },
+    {
+      "name": "Dr. James Thompson",
+      "portfolio": "Minister for Health",
+      "approval": 72,
+      "status": "strong",
+      "tenure": "1.8 years",
+      "background": "Emergency physician, health policy expert"
+    },
+    {
+      "name": "David Chen",
+      "portfolio": "Treasurer",
+      "approval": 65,
+      "status": "stable",
+      "tenure": "3.1 years",
+      "background": "Former bank executive, economics PhD"
+    },
+    {
+      "name": "Dr. Maria Santos",
+      "portfolio": "Minister for Education",
+      "approval": 59,
+      "status": "under_pressure",
+      "tenure": "1.2 years",
+      "background": "Former university vice-chancellor"
+    },
+    {
+      "name": "Robert Anderson",
+      "portfolio": "Minister for Defence",
+      "approval": 71,
+      "status": "strong",
+      "tenure": "2.8 years",
+      "background": "Former military officer, strategic studies"
+    },
+    {
+      "name": "Lisa Wang",
+      "portfolio": "Minister for Environment",
+      "approval": 63,
+      "status": "stable",
+      "tenure": "1.9 years",
+      "background": "Environmental lawyer, climate policy advocate"
+    }
+  ]
+}

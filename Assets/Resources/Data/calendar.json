@@ -1,0 +1,52 @@
+{
+  "events": [
+    {
+      "title": "Question Time",
+      "time": "14:00",
+      "duration": "1 hour",
+      "location": "House of Representatives",
+      "type": "parliamentary",
+      "priority": "high"
+    },
+    {
+      "title": "Cabinet Meeting",
+      "time": "09:00",
+      "duration": "2 hours",
+      "location": "Cabinet Room",
+      "type": "meeting",
+      "priority": "very_high"
+    },
+    {
+      "title": "Press Conference - Infrastructure",
+      "time": "11:30",
+      "duration": "45 minutes",
+      "location": "Press Gallery",
+      "type": "media",
+      "priority": "high"
+    },
+    {
+      "title": "Bilateral Meeting - Education Minister",
+      "time": "16:00",
+      "duration": "30 minutes",
+      "location": "PM Office",
+      "type": "meeting",
+      "priority": "medium"
+    },
+    {
+      "title": "Regional Development Roundtable",
+      "time": "10:00",
+      "duration": "90 minutes",
+      "location": "Conference Room A",
+      "type": "stakeholder",
+      "priority": "medium"
+    },
+    {
+      "title": "Security Briefing",
+      "time": "08:00",
+      "duration": "30 minutes",
+      "location": "Secure Room",
+      "type": "briefing",
+      "priority": "high"
+    }
+  ]
+}

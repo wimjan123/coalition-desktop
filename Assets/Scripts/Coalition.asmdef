@@ -1,0 +1,17 @@
+{
+    "name": "Coalition",
+    "rootNamespace": "Coalition",
+    "references": [
+        "UnityEngine.UIElementsModule",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

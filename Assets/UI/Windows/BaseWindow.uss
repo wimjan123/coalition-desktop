@@ -1,0 +1,226 @@
+/* Window Root */
+.window {
+    position: absolute;
+    min-width: 300px;
+    min-height: 200px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+.window:focus {
+    border-color: rgba(0, 122, 255, 0.8);
+    box-shadow: 0 8px 32px rgba(0, 122, 255, 0.3);
+}
+
+/* Window Chrome */
+.window-chrome {
+    background-color: rgba(245, 245, 245, 0.9);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Title Bar */
+.title-bar {
+    flex-direction: row;
+    align-items: center;
+    height: 32px;
+    padding: 0 8px;
+    cursor: grab;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.title-bar:active {
+    cursor: grabbing;
+}
+
+/* Window Controls */
+.window-controls {
+    flex-direction: row;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+/* Window Buttons */
+.window-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease;
+}
+
+.close-button {
+    background-color: rgb(255, 95, 87);
+    color: white;
+}
+
+.close-button:hover {
+    background-color: rgb(255, 70, 60);
+}
+
+.minimize-button {
+    background-color: rgb(255, 189, 46);
+    color: white;
+}
+
+.minimize-button:hover {
+    background-color: rgb(255, 170, 20);
+}
+
+.maximize-button {
+    background-color: rgb(40, 201, 64);
+    color: white;
+}
+
+.maximize-button:hover {
+    background-color: rgb(20, 180, 44);
+}
+
+/* Window Title */
+.window-title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 0 10px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Title Spacer */
+.title-spacer {
+    width: 80px;
+    flex-shrink: 0;
+}
+
+/* Window Content */
+.window-content {
+    flex-grow: 1;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Resize Handles */
+.resize-handles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.resize-handle {
+    position: absolute;
+    pointer-events: auto;
+}
+
+/* Edge Handles */
+.resize-top {
+    top: 0;
+    left: 8px;
+    right: 8px;
+    height: 4px;
+    cursor: ns-resize;
+}
+
+.resize-bottom {
+    bottom: 0;
+    left: 8px;
+    right: 8px;
+    height: 4px;
+    cursor: ns-resize;
+}
+
+.resize-left {
+    left: 0;
+    top: 8px;
+    bottom: 8px;
+    width: 4px;
+    cursor: ew-resize;
+}
+
+.resize-right {
+    right: 0;
+    top: 8px;
+    bottom: 8px;
+    width: 4px;
+    cursor: ew-resize;
+}
+
+/* Corner Handles */
+.resize-corner {
+    width: 8px;
+    height: 8px;
+}
+
+.resize-top-left {
+    top: 0;
+    left: 0;
+    cursor: nw-resize;
+}
+
+.resize-top-right {
+    top: 0;
+    right: 0;
+    cursor: ne-resize;
+}
+
+.resize-bottom-left {
+    bottom: 0;
+    left: 0;
+    cursor: sw-resize;
+}
+
+.resize-bottom-right {
+    bottom: 0;
+    right: 0;
+    cursor: se-resize;
+}
+
+/* Window States */
+.window--minimized {
+    display: none;
+}
+
+.window--maximized {
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: calc(100% - 70px) !important;
+    border-radius: 0;
+}
+
+.window--focused {
+    z-index: 1000;
+}
+
+/* Animations */
+@keyframes windowOpen {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.window {
+    animation: windowOpen 0.2s ease-out;
+}

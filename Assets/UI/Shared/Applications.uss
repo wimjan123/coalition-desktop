@@ -1,0 +1,466 @@
+/* Application Common Styles */
+
+/* App Container */
+.app-container {
+    flex-grow: 1;
+    background-color: white;
+    flex-direction: column;
+}
+
+.app-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 12px 16px;
+    flex-shrink: 0;
+}
+
+.app-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #212529;
+    margin: 0;
+}
+
+.app-content {
+    flex-grow: 1;
+    padding: 0;
+    background-color: white;
+}
+
+/* Mail App Styles */
+.mail-app {
+    flex-grow: 1;
+}
+
+.message-list {
+    flex-direction: column;
+    padding: 8px;
+    gap: 4px;
+}
+
+.message-item {
+    background-color: white;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.message-item:hover {
+    background-color: #f8f9fa;
+    border-color: #007bff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message-item.high-priority {
+    border-left: 4px solid #dc3545;
+}
+
+.message-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.message-sender {
+    font-weight: 600;
+    color: #495057;
+    font-size: 13px;
+}
+
+.message-timestamp {
+    font-size: 11px;
+    color: #6c757d;
+}
+
+.message-subject {
+    font-weight: 500;
+    color: #212529;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.message-preview {
+    color: #6c757d;
+    font-size: 12px;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+/* Chat App Styles */
+.chat-app {
+    flex-grow: 1;
+}
+
+.conversation-list {
+    flex-direction: column;
+    padding: 8px;
+    gap: 2px;
+}
+
+.conversation-item {
+    background-color: white;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.conversation-item:hover {
+    background-color: #f8f9fa;
+    border-color: #28a745;
+}
+
+.conversation-item.has-unread {
+    background-color: #f8f9fa;
+    border-color: #007bff;
+    font-weight: 500;
+}
+
+.conversation-header {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4px;
+    gap: 8px;
+}
+
+.contact-name {
+    font-weight: 600;
+    color: #212529;
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.status-online {
+    background-color: #28a745;
+}
+
+.status-offline {
+    background-color: #6c757d;
+}
+
+.status-busy {
+    background-color: #ffc107;
+}
+
+.status-group {
+    background-color: #007bff;
+}
+
+.message-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.last-message {
+    color: #6c757d;
+    font-size: 12px;
+    flex-grow: 1;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.timestamp {
+    font-size: 11px;
+    color: #adb5bd;
+    margin-left: 8px;
+}
+
+.unread-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: bold;
+    min-width: 16px;
+    text-align: center;
+}
+
+/* Polling App Styles */
+.polling-app {
+    flex-grow: 1;
+}
+
+.polling-dashboard {
+    flex-direction: column;
+    padding: 16px;
+    gap: 20px;
+}
+
+.polling-section {
+    background-color: white;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.section-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #212529;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 8px;
+}
+
+.rating-container {
+    flex-direction: column;
+    gap: 12px;
+}
+
+.current-rating {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.rating-value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.trend-indicator {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.trend-indicator.positive {
+    color: #28a745;
+}
+
+.trend-indicator.negative {
+    color: #dc3545;
+}
+
+.rating-breakdown {
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rating-item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.rating-label {
+    font-weight: 500;
+    color: #495057;
+}
+
+.rating-value.positive {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.rating-value.negative {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+.rating-value.neutral {
+    color: #6c757d;
+    font-weight: 600;
+}
+
+.standings-container {
+    flex-direction: column;
+    gap: 8px;
+}
+
+.party-item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid #007bff;
+}
+
+.party-name {
+    font-weight: 600;
+    color: #212529;
+    flex-grow: 1;
+}
+
+.party-stats {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.party-percentage {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 16px;
+}
+
+.party-seats {
+    color: #6c757d;
+    font-size: 12px;
+}
+
+.trend-icon {
+    font-size: 14px;
+}
+
+.trend-icon.up {
+    color: #28a745;
+}
+
+.trend-icon.down {
+    color: #dc3545;
+}
+
+.trend-icon.stable {
+    color: #6c757d;
+}
+
+.issues-container {
+    flex-direction: column;
+    gap: 12px;
+}
+
+.issue-item {
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+.issue-name {
+    font-weight: 600;
+    color: #212529;
+}
+
+.issue-bar {
+    height: 8px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.support-bar {
+    height: 100%;
+    background-color: #28a745;
+    transition: width 0.3s ease;
+}
+
+.issue-stats {
+    font-size: 11px;
+    color: #6c757d;
+}
+
+/* Event List Styles */
+.event-list {
+    flex-direction: column;
+    padding: 8px;
+    gap: 8px;
+}
+
+.event-item {
+    background-color: white;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 12px;
+    border-left: 4px solid #007bff;
+}
+
+/* Minister List Styles */
+.minister-list {
+    flex-direction: column;
+    padding: 8px;
+    gap: 8px;
+}
+
+.minister-item {
+    background-color: white;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+/* Policy List Styles */
+.policy-list {
+    flex-direction: column;
+    padding: 8px;
+    gap: 8px;
+}
+
+.policy-item {
+    background-color: white;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 12px;
+    border-left: 4px solid #ffc107;
+}
+
+/* News List Styles */
+.news-list {
+    flex-direction: column;
+    padding: 8px;
+    gap: 8px;
+}
+
+.news-item {
+    background-color: white;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.news-item.sentiment-positive {
+    border-left: 4px solid #28a745;
+}
+
+.news-item.sentiment-negative {
+    border-left: 4px solid #dc3545;
+}
+
+.news-item.sentiment-neutral {
+    border-left: 4px solid #6c757d;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .app-content {
+        padding: 8px;
+    }
+
+    .section-header {
+        font-size: 16px;
+    }
+
+    .rating-value {
+        font-size: 24px;
+    }
+
+    .party-stats {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4px;
+    }
+}

@@ -1,0 +1,79 @@
+{
+  "approval_rating": {
+    "current": 47,
+    "trend": "up",
+    "change": "+2.3",
+    "breakdown": {
+      "approve": 47,
+      "disapprove": 38,
+      "undecided": 15
+    },
+    "demographics": {
+      "urban": 45,
+      "regional": 52,
+      "rural": 49
+    }
+  },
+  "party_standings": [
+    {
+      "party": "Coalition Government",
+      "percentage": 42,
+      "seats": 78,
+      "trend": "up",
+      "change": "+1.2"
+    },
+    {
+      "party": "Labor Opposition",
+      "percentage": 38,
+      "seats": 68,
+      "trend": "down",
+      "change": "-0.8"
+    },
+    {
+      "party": "Green Alliance",
+      "percentage": 12,
+      "seats": 3,
+      "trend": "stable",
+      "change": "+0.1"
+    },
+    {
+      "party": "Crossbench",
+      "percentage": 8,
+      "seats": 2,
+      "trend": "stable",
+      "change": "-0.5"
+    }
+  ],
+  "key_issues": [
+    {
+      "issue": "Healthcare Access",
+      "support": 67,
+      "priority": "high",
+      "trend": "up"
+    },
+    {
+      "issue": "Climate Policy",
+      "support": 58,
+      "priority": "high",
+      "trend": "stable"
+    },
+    {
+      "issue": "Economic Management",
+      "support": 71,
+      "priority": "very_high",
+      "trend": "up"
+    },
+    {
+      "issue": "Education Funding",
+      "support": 62,
+      "priority": "medium",
+      "trend": "up"
+    },
+    {
+      "issue": "Infrastructure",
+      "support": 74,
+      "priority": "high",
+      "trend": "up"
+    }
+  ]
+}

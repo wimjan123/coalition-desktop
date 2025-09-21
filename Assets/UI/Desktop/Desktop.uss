@@ -1,0 +1,168 @@
+/* Desktop Root Layout */
+.desktop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+/* Background */
+.background {
+    background-color: rgb(30, 144, 255);
+    background-image: url('project://database/Assets/Textures/Desktop/wallpaper_default.png');
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Desktop Icons */
+.desktop-icons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Window Layer */
+.window-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.window-layer > * {
+    pointer-events: auto;
+}
+
+/* Notification Layer */
+.notification-layer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    flex-direction: column;
+    gap: 10px;
+    pointer-events: none;
+}
+
+.notification-layer > * {
+    pointer-events: auto;
+}
+
+/* Dock Container */
+.dock {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Dock Panel */
+.dock-panel {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 10px 20px;
+    gap: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* App Container */
+.app-container {
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+/* System Container */
+.system-container {
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+/* Dock Separator */
+.dock-separator {
+    width: 1px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 5px;
+}
+
+/* App Icons */
+.app-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.app-icon:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.app-icon:active {
+    transform: scale(0.95);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* System Icons */
+.system-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.system-icon:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .dock-panel {
+        padding: 8px 15px;
+        gap: 10px;
+    }
+
+    .app-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .system-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+}
