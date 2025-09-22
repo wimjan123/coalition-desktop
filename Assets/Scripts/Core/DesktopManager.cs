@@ -37,7 +37,7 @@ namespace Coalition.Core
             // Get or create UIDocument
             if (uiDocument == null)
             {
-                uiDocument = FindObjectOfType<UIDocument>();
+                uiDocument = FindFirstObjectByType<UIDocument>();
             }
 
             if (uiDocument == null)

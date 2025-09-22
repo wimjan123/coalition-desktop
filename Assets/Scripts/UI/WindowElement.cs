@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.UIElements;
+using Coalition.Core;
 
 namespace Coalition.UI
 {
-    public class WindowElement : VisualElement
+    [UxmlElement]
+    public partial class WindowElement : VisualElement
     {
-        public new class UxmlFactory : UxmlFactory<WindowElement, UxmlTraits> { }
 
         public string AppName { get; set; }
         public bool IsMinimized { get; private set; }
@@ -141,7 +142,7 @@ namespace Coalition.UI
             style.display = DisplayStyle.None;
 
             // Notify dock controller
-            var dockController = Object.FindObjectOfType<Coalition.Core.DockController>();
+            var dockController = Object.FindFirstObjectByType<Coalition.Core.DockController>();
             dockController?.ShowMinimizedIndicator(AppName);
         }
 
@@ -155,7 +156,7 @@ namespace Coalition.UI
             WindowManager.Instance?.BringToFront(this);
 
             // Notify dock controller
-            var dockController = Object.FindObjectOfType<Coalition.Core.DockController>();
+            var dockController = Object.FindFirstObjectByType<Coalition.Core.DockController>();
             dockController?.HideMinimizedIndicator(AppName);
         }
 
@@ -245,7 +246,7 @@ namespace Coalition.UI
                 width = resolvedStyle.width,
                 height = resolvedStyle.height,
                 isMinimized = IsMinimized,
-                zIndex = (int)resolvedStyle.zIndex
+                zIndex = 0 // zIndex not available in Unity 6
             };
         }
 
@@ -255,7 +256,7 @@ namespace Coalition.UI
             style.top = data.y;
             style.width = data.width;
             style.height = data.height;
-            style.zIndex = data.zIndex;
+            // style.zIndex not available in Unity 6 - using hierarchy order instead
 
             if (data.isMinimized)
             {

@@ -37,7 +37,7 @@ namespace Coalition.Core
 
         private void InitializeNotificationSystem()
         {
-            var uiDocument = FindObjectOfType<UIDocument>();
+            var uiDocument = FindFirstObjectByType<UIDocument>();
             if (uiDocument != null)
             {
                 notificationContainer = uiDocument.rootVisualElement.Q("notification-overlay");

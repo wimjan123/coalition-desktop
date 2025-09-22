@@ -32,7 +32,7 @@ namespace Coalition.Core
         private void Start()
         {
             // Get window container reference
-            var uiDocument = FindObjectOfType<UIDocument>();
+            var uiDocument = FindFirstObjectByType<UIDocument>();
             if (uiDocument != null)
             {
                 windowContainer = uiDocument.rootVisualElement.Q("window-container");
@@ -85,7 +85,10 @@ namespace Coalition.Core
         {
             if (window == null) return;
 
-            window.style.zIndex = nextZIndex++;
+            // Use hierarchy order for z-ordering in Unity 6 (zIndex not available)
+            window.SendToBack();
+            window.BringToFront();
+            nextZIndex++;
             window.AddToClassList("window--focused");
 
             // Remove focus class from other windows
@@ -97,7 +100,7 @@ namespace Coalition.Core
                 }
             }
 
-            Debug.Log($"Brought window to front: {window.AppName}, z-index: {window.style.zIndex.value}");
+            Debug.Log($"Brought window to front: {window.AppName}");
         }
 
         public void CloseWindow(WindowElement window)
@@ -265,7 +268,7 @@ namespace Coalition.Core
             Debug.Log($"Open windows: {openWindows.Count}");
             foreach (var window in openWindows)
             {
-                Debug.Log($"- {window.AppName}: Z-Index {window.style.zIndex.value}, Minimized: {window.IsMinimized}");
+                Debug.Log($"- {window.AppName}: Minimized: {window.IsMinimized}");
             }
         }
 #endif

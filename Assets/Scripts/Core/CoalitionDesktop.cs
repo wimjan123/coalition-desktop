@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using Coalition.UI;
 using Coalition.Utils;
+using Coalition.Data;
 
 namespace Coalition.Core
 {
@@ -84,7 +85,7 @@ namespace Coalition.Core
         {
             if (manager == null)
             {
-                manager = FindObjectOfType<T>();
+                manager = FindFirstObjectByType<T>();
                 if (manager == null)
                 {
                     var managerObj = new GameObject(typeof(T).Name);

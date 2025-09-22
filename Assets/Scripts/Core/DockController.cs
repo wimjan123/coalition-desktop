@@ -60,7 +60,7 @@ namespace Coalition.Core
         private void InitializeDock()
         {
             // Get dock elements from UI
-            var uiDocument = FindObjectOfType<UIDocument>();
+            var uiDocument = FindFirstObjectByType<UIDocument>();
             if (uiDocument == null)
             {
                 Debug.LogError("No UIDocument found for dock initialization");

@@ -30,7 +30,7 @@ namespace Coalition.Utils
 
         private void CreateFPSDisplay()
         {
-            var uiDocument = FindObjectOfType<UIDocument>();
+            var uiDocument = FindFirstObjectByType<UIDocument>();
             if (uiDocument == null) return;
 
             var root = uiDocument.rootVisualElement;

@@ -57,7 +57,7 @@ namespace Coalition.UI
         {
             if (!isDragging || !target.HasPointerCapture(evt.pointerId)) return;
 
-            Vector2 delta = evt.localPosition - startPointerPosition;
+            Vector2 delta = (Vector2)evt.localPosition - startPointerPosition;
             Vector2 newPosition = startPosition + delta;
 
             // Constrain to desktop bounds

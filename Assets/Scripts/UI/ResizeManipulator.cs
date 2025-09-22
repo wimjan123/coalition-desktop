@@ -91,7 +91,7 @@ namespace Coalition.UI
         {
             if (!isResizing || activeDirection == ResizeDirection.None) return;
 
-            Vector2 delta = evt.position - startPointerPosition;
+            Vector2 delta = (Vector2)evt.position - startPointerPosition;
             ApplyResize(delta);
         }
 

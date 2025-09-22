@@ -21,7 +21,7 @@ namespace Coalition.Applications
                 window = CreateWindow();
                 if (window != null)
                 {
-                    var windowContainer = FindObjectOfType<UIDocument>()?.rootVisualElement.Q("window-container");
+                    var windowContainer = FindFirstObjectByType<UIDocument>()?.rootVisualElement.Q("window-container");
                     if (windowContainer != null)
                     {
                         windowContainer.Add(window);
@@ -146,11 +146,18 @@ namespace Coalition.Applications
     {
         public static int GetOpenWindowsCount(this WindowManager manager)
         {
-            return manager?.HasOpenWindows == true ?
-                System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance
-                .GetType().GetField("openWindows", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
-                ?.GetValue(manager) is System.Collections.Generic.List<WindowElement> windows ?
-                windows.Count : 0 : 0;
+            if (manager?.HasOpenWindows != true) return 0;
+
+            // Use reflection to access private openWindows field
+            var field = manager.GetType().GetField("openWindows",
+                System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+
+            if (field?.GetValue(manager) is System.Collections.Generic.List<WindowElement> windows)
+            {
+                return windows.Count;
+            }
+
+            return 0;
         }
     }
 }
